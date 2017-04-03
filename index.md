@@ -1,6 +1,10 @@
 ## Sky view performance
 
-You can use the [editor on GitHub](https://github.com/qrslrhko/sky-view/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+
+In this project, I create two different scenes: sunny and cloudy sky    
+
+The basic ideas in this performacne is like this:
+
 ![idea](https://cloud.githubusercontent.com/assets/16565587/24592942/a7fd5302-17d2-11e7-96b5-2ea9586766a5.jpg)
 
 ### Markdown
