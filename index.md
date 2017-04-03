@@ -11,7 +11,39 @@ In order to make sun vivic, I divided sun into three layers: white layer, yellow
 
 
 ### Make Objects
-I use [glman](http://web.engr.oregonstate.edu/~mjb/glman/)
+Let me introduce this user interface [glman](http://web.engr.oregonstate.edu/~mjb/glman/). It is helpful and easy to adjuct parameters, variables in code. Glman needs threes files, glib, vertex shader, and fragment shader. 
+```markdown
+##OpenGL GLIB
+Ortho -5. 5.   -5. 5.
+LookAt 0 0 2  0 0 0  0 1 0
+
+
+Vertex   sun_sky.vert
+Fragment sun_sky.frag
+Program  Sun_sky					\
+	uShininess <2. 3.15 800.>		\
+    uLightX <-20. -.78 20.>                   \
+    uLightY <-20. -.2559 20.>          \
+    uLightZ <-20. 2.93 20.>          \
+   	uKa <0. 0.49 1.0>			\
+	uKd <0. 0.611 1.0>			\
+	uKs <0. 0.9329 3.0>			\
+	uTol <0. .0356 .080>						\
+	uTol_halo <0. .0754 .080>						\
+	uAfewClouds <false>						\
+	uTol_cloud <0. .0774 .080>						\
+	uNoiseAmp_A <0. 0.8027 10.>  uNoiseFreq_A <0. 1.2485 10.>   \
+	uNoiseAmp_B <0. 0.9835 10.>  uNoiseFreq_B <0. 1.1376 10.>   \
+	uNoiseAmp_C <0. 0.9835 10.>  uNoiseFreq_C <0. 1.1376 10.>   \
+	uCloudColor {0.9 0.9 0.9 1.} 			\
+	uScale <0. .17 .3> 						 \
+	uBias <0. .3 .9> 							\
+	uSpecularColor {1. 1. 1. 1.}
+
+//Color 1 .3 0
+QuadXY .2 4. 100 100 
+```
+
 
 
 -Rectangular
