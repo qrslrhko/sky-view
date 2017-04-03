@@ -1,7 +1,8 @@
 ## Sky view performance
 
-
-In this project, I create two different scenes: sunny and cloudy sky    
+There are two different scenes: sunny and cloudy sky. 
+Apply three types of lighting such as ambient specular diffuse in sun.
+Make noises for clouds.  
 
 The basic ideas in this performacne is like this:
 
