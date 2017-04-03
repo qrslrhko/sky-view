@@ -94,6 +94,10 @@ In fragment shader:<br />
 
 
 ```
+According to [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) in wiki,
+
+
+
 
 
 - **circle**
