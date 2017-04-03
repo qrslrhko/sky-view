@@ -68,36 +68,29 @@ QuadXY 0.2 4.0 100 100    \\ QuadXY z size nx ny
 
 - Gradient color 
 
-In the plane, I use two `navy_blue` and `navy_blue` to make gradient color. Here is a part of code in fragment shader. Input `vST` from vertex shader.
+In the plane, I use two `navy_blue` and `navy_blue` to make gradient color. Here is a part of code in fragment shader. Input `vST` to   into fragment shader.
 
 In vertex shader:<br /> 
 ```glsl
 
- out vec2 vST;
+ out vec2 new_vST;
  ...
- vST = gl_MultiTexCoord0.st;
+ new_vST = gl_MultiTexCoord0.st;
  ...
 ```
+My idea is to take vertical gradient color. Here I take y axis `uv.y` to do gradient color with r,g,b color. linearly interpolate  three values.  
 
 In fragment shader:<br />  
 ```glsl
-   in vec2 vST;
+   in vec2 new_vST;
    ...
    ...
-  vec2 new_vST  = vST;
-  vec3 color;
- 
-    vec3  navy_blue = vec3( 0.137255, 0.137255, 0.556863 );
+   vec2 uv = new_vST;
+   vec3 color; 
+   vec3  navy_blue = vec3( 0.137255, 0.137255, 0.556863 );
+   vec3 light_blue = vec3(28./255., 169./255., 178./255.);  
 
-    vec3 light_blue = vec3(28./255., 169./255., 178./255.);  
-
-
-    color.r = new_vST.y * (navy_blue.r - light_blue.r) + light_blue.r;
-    color.g = new_vST.y * (navy_blue.g - light_blue.g) + light_blue.g;
-    color.b = new_vST.y * (navy_blue.b - light_blue.b) + light_blue.b;
-
-
-    vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + uv.y  - 1* uv.y * uv.y)  );
+   vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + uv.y  - 1* uv.y * uv.y)  );
 
 
 ```
