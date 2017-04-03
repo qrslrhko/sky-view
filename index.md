@@ -45,8 +45,8 @@ QuadXY .2 4. 100 100
 ```
 glib file is like a menu, it lists all of uniform variables from fragment and vertex shader. Each uniform variable will show on user interface. We don't need to go back to compile the code again and again for adjusting variables, just adjust variables through user interface. 
 
+<img width="544" alt="screen shot 2017-04-02 at 7 29 13 pm" src="https://cloud.githubusercontent.com/assets/16565587/24593692/b77726a2-17da-11e7-8ee1-2b880926db0b.png">
 
-// photo--- /
 
 
 
