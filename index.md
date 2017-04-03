@@ -11,6 +11,8 @@ In order to make sun vivic, I divided sun into three layers: white layer, yellow
 
 
 ### Make Objects
+I use [glman](http://web.engr.oregonstate.edu/~mjb/glman/)
+
 
 -Rectangular
 
