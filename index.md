@@ -2,7 +2,8 @@
 
 There are two different scenes: sunny and cloudy sky. 
 
-The basic ideas in this performacne is like this:<br /> 
+The basic ideas in this performacne is like this, a shining sun, and few coulds. In order to make sun vivic, I divided sun into three layers: white layer( it compasses central), yellow layer(centeral)  :<br /> 
+
 ![idea](https://cloud.githubusercontent.com/assets/16565587/24595498/f0c3f6e0-17eb-11e7-8441-a6809c5c4667.jpg)<br />
 <br /> 
 <br /> 
