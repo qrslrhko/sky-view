@@ -4,6 +4,8 @@ There are two different scenes: sunny and cloudy sky.
 
 The basic ideas in this performacne is like this:<br /> 
 ![idea](https://cloud.githubusercontent.com/assets/16565587/24595498/f0c3f6e0-17eb-11e7-8441-a6809c5c4667.jpg)<br />
+<br /> 
+<br /> 
 There are four objects in my performacne, inculding one rectangular, and three circle.<br /> 
 ![origional](https://cloud.githubusercontent.com/assets/16565587/24593365/9cb0d37a-17d7-11e7-9626-e0796c442eb6.png)<br />
 
