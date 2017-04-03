@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/qrslrhko/sky-view/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-![idea](https://cloud.githubusercontent.com/assets/16565587/24592774/e6d5732c-17d0-11e7-8526-449b3cbd79f4.jpg)
+https://cloud.githubusercontent.com/assets/16565587/24592812/6d892080-17d1-11e7-8b05-48578965417d.jpg
 
 
 ### Markdown
