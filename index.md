@@ -17,7 +17,8 @@ In order to make sun vivic, I divided sun into three layers: white layer, yellow
 Let me introduce this user interface [glman](http://web.engr.oregonstate.edu/~mjb/glman/). It is helpful and easy to adjuct parameters or variables in code. Glman needs threes files, glib, vertex shader, and fragment shader. 
 
 - glib file <br />
-```glib
+
+```glsl
 ##OpenGL GLIB
 Ortho -5. 5.   -5. 5.
 LookAt 0 0 2  0 0 0  0 1 0
@@ -61,7 +62,7 @@ Here I use `QuadXY` to create a XY plane, passing through (Z = 0.2) Z=z.<br />
 4.0 is the dimension od XY plane from (-4.0,-4.0) to (4.0,4.0) in X and Y. <br />    
 nx and xy are the number of sub-quads in this plane is brken into. More inforimation in this [link](http://web.engr.oregonstate.edu/~mjb/glman/Doc/glman.pdf) 
 
-```glib
+```glsl
 QuadXY 0.2 4.0 100 100    \\ QuadXY z size nx ny
 ```
 
@@ -71,6 +72,7 @@ QuadXY 0.2 4.0 100 100    \\ QuadXY z size nx ny
 In the plane, I use two `navy_blue` and `navy_blue` to make gradient color. Here is a part of code in fragment shader. Input `vST` to   into fragment shader.
 
 In vertex shader:<br /> 
+
 ```glsl
 
  out vec2 new_vST;
@@ -81,6 +83,7 @@ In vertex shader:<br />
 My idea is to take vertical gradient color. Here I take y axis `uv.y` to do gradient color with r,g,b color. linearly interpolate  three values.  
 
 In fragment shader:<br />  
+
 ```glsl
    in vec2 new_vST;
    ...
@@ -97,7 +100,9 @@ In fragment shader:<br />
 According to [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) in wiki,
 <img width="994" alt="screen shot 2017-04-03 at 2 07 46 am" src="https://cloud.githubusercontent.com/assets/16565587/24602637/8a26463c-1812-11e7-8126-96f9ca0fe5ce.png">. It shows a gradient color on a square with four colors. In my project, I only need two colors on rectangular, so let's change the formular a little bit different... <br />
 
-```          (1-x)(y)             xy
+
+```glsl
+             (1-x)(y)             xy
                 (0,1)           (1,1)
  		o---------------o
 		.               .
@@ -116,7 +121,7 @@ An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation).The p
 <img width="250" alt="screen shot 2017-04-03 at 2 51 18 am" src="https://cloud.githubusercontent.com/assets/16565587/24604140/7d7d6c34-1818-11e7-878d-5382fae2645a.png"> <br />
 <br />
 
-```  
+```glsl  
    (1-x)(y)*Color_1 + (1-y)x*Color_1   and  (1-x)(1-y)*Color_2 + xy*Color_2
  =  y-xy+x-xy*Color_1  and  1-y-x+xy+xy*Color_2
  =  (x+y-2xy)Color_1   and  (1-x-y+2xy)*Color_2 
