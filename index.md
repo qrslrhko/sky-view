@@ -12,9 +12,9 @@ In order to make sun vivic, I divided sun into three layers: white layer, yellow
 
 ### Make Objects
 
-## Rectangular
+-Rectangular
 
-## circle
+-circle
 
 ### Make coulds
 
