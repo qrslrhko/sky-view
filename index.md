@@ -1,9 +1,8 @@
-## Welcome to GitHub Pages
+## Sky view performance
 
 You can use the [editor on GitHub](https://github.com/qrslrhko/sky-view/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-https://cloud.githubusercontent.com/assets/16565587/24592812/6d892080-17d1-11e7-8b05-48578965417d.jpg
-
+![idea](https://cloud.githubusercontent.com/assets/16565587/24592812/6d892080-17d1-11e7-8b05-48578965417d.jpg)
 
 ### Markdown
 
