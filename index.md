@@ -24,7 +24,7 @@ The Sun has a light yellow solor halo. <br />
 <br />
 <br />
 sun and altocumulus clouds<br />
-Is it a sun or moon? 
+A sunset scene.<br />
 <br />
 <br />
 ![good_3](https://cloud.githubusercontent.com/assets/16565587/24635486/82368c0e-1888-11e7-94d9-10d1165ec8c4.png)
