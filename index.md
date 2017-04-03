@@ -50,11 +50,34 @@ glib file is like a menu, it lists all of uniform variables from fragment and ve
 <img width="544" alt="screen shot 2017-04-02 at 7 29 13 pm" src="https://cloud.githubusercontent.com/assets/16565587/24593692/b77726a2-17da-11e7-8ee1-2b880926db0b.png">
 
 
+- **Rectangular and gradient color **
+
+Unlike we create a recuangular through `glBegin(GL_QUADS)`, `glDrawArrays()`, `glDrawElements()`, We can use this in glib file to create a rectangular object.
+
+```
+QuadXY .2 4. 100 100 
+```
 
 
 
+```
+  vec3 color;
+ 
+    vec3  navy_blue = vec3( 0.137255, 0.137255, 0.556863 );
 
-- **Rectangular**
+    vec3 light_blue = vec3(28./255., 169./255., 178./255.);  // good mint color
+
+
+    color.r = new_vST.y * (navy_blue.r - light_blue.r) + light_blue.r;
+    color.g = new_vST.y * (navy_blue.g - light_blue.g) + light_blue.g;
+    color.b = new_vST.y * (navy_blue.b - light_blue.b) + light_blue.b;
+
+
+    vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + uv.y  - 1* uv.y * uv.y)  );
+
+
+```
+
 
 - **circle**
 
