@@ -54,11 +54,11 @@ Glib file is like a menu, it lists all of uniform variables from fragment and ve
 <img width="544" alt="screen shot 2017-04-02 at 7 29 13 pm" src="https://cloud.githubusercontent.com/assets/16565587/24593692/b77726a2-17da-11e7-8ee1-2b880926db0b.png">
 
 
-- **Rectangular and gradient color **
+- Rectangular
 
 In OpenGl`glBegin(GL_QUADS)`, `glDrawArrays()`, `glDrawElements()` are several method to create rectangular. In glman, We have another  method `QuadXY` or` QuadXZ` in glib file to create a rectangular object.<br />
-Here I use `QuadXY` to create a XY plane, passing through (Z = 0.2) Z=z. .<br /> 
-4.0 is the dimension od XY plane from (-4.0,-4.0) to (4.0,4.0) in X and Y. .<br />    
+Here I use `QuadXY` to create a XY plane, passing through (Z = 0.2) Z=z.<br /> 
+4.0 is the dimension od XY plane from (-4.0,-4.0) to (4.0,4.0) in X and Y. <br />    
 nx and xy are the number of sub-quads in this plane is brken into. More inforimation in this [link](http://web.engr.oregonstate.edu/~mjb/glman/Doc/glman.pdf) 
 
 ```glib
@@ -66,15 +66,30 @@ QuadXY 0.2 4.0 100 100    \\ QuadXY z size nx ny
 ```
 
 
+- Gradient color 
 
+In the plane, I use two `navy_blue` and `navy_blue` to make gradient color. Here is a part of code in fragment shader. Input `vST` from vertex shader.
 
-
+In vertex shader:<br /> 
 ```glsl
+
+ out vec2 vST;
+ ...
+ vST = gl_MultiTexCoord0.st;
+ ...
+```
+
+In fragment shader:<br />  
+```glsl
+   in vec2 vST;
+   ...
+   ...
+  vec2 new_vST  = vST;
   vec3 color;
  
     vec3  navy_blue = vec3( 0.137255, 0.137255, 0.556863 );
 
-    vec3 light_blue = vec3(28./255., 169./255., 178./255.);  // good mint color
+    vec3 light_blue = vec3(28./255., 169./255., 178./255.);  
 
 
     color.r = new_vST.y * (navy_blue.r - light_blue.r) + light_blue.r;
