@@ -123,7 +123,7 @@ An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation).The p
  =  (x+y-2xy)Color_1   and  (-1+x+y-2xy)*Color_2
  
 ```  
-I take `x+y-2xy` as the  
+We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular. Here, I prefer `x+y-2xy` as the precentage of two colors.        
 
 - **circle**
 
@@ -138,22 +138,3 @@ I take `x+y-2xy` as the
 
 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
