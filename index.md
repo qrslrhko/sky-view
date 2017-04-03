@@ -13,7 +13,7 @@ In order to make sun vivic, I divided sun into three layers: white layer, yellow
 ### Make Objects
 Let me introduce this user interface [glman](http://web.engr.oregonstate.edu/~mjb/glman/). It is helpful and easy to adjuct parameters, variables in code. Glman needs threes files, glib, vertex shader, and fragment shader. 
 
--**glib file**
+- **glib file**
 ```markdown
 ##OpenGL GLIB
 Ortho -5. 5.   -5. 5.
@@ -54,9 +54,9 @@ glib file is like a menu, it lists all of uniform variables from fragment and ve
 
 
 
--**Rectangular**
+- **Rectangular**
 
--**circle**
+- **circle**
 
 ### Make coulds
 
