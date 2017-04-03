@@ -11,7 +11,7 @@ In order to make sun vivic, I divided sun into three layers: white layer, yellow
 
 
 ### Make Objects
-Let me introduce this user interface [glman](http://web.engr.oregonstate.edu/~mjb/glman/). It is helpful and easy to adjuct parameters, variables in code. Glman needs threes files, glib, vertex shader, and fragment shader. 
+Let me introduce this user interface [glman](http://web.engr.oregonstate.edu/~mjb/glman/). It is helpful and easy to adjuct parameters or variables in code. Glman needs threes files, glib, vertex shader, and fragment shader. 
 
 - **glib file**
 ```markdown
@@ -45,7 +45,8 @@ Program  Sun_sky					\
 //Color 1 .3 0
 QuadXY .2 4. 100 100 
 ```
-glib file is like a menu, it lists all of uniform variables from fragment and vertex shader. Each uniform variable will show on user interface. We don't need to go back to compile the code again and again for adjusting variables, just adjust variables through user interface. 
+
+Glib file is like a menu, it lists all of uniform variables from fragment and vertex shader. Each uniform variable will show on user interface. We don't need to go back to compile the code again and again for adjusting variables, just adjust variables through user interface.  
 
 <img width="544" alt="screen shot 2017-04-02 at 7 29 13 pm" src="https://cloud.githubusercontent.com/assets/16565587/24593692/b77726a2-17da-11e7-8ee1-2b880926db0b.png">
 
@@ -57,6 +58,8 @@ Unlike we create a recuangular through `glBegin(GL_QUADS)`, `glDrawArrays()`, `g
 ```
 QuadXY .2 4. 100 100 
 ```
+
+
 
 
 
