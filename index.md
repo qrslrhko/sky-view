@@ -95,6 +95,7 @@ In fragment shader:<br />
 
 ```
 According to [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) in wiki,
+<img width="994" alt="screen shot 2017-04-03 at 2 07 46 am" src="https://cloud.githubusercontent.com/assets/16565587/24602637/8a26463c-1812-11e7-8126-96f9ca0fe5ce.png">. It shows a gradient color on a square with four colors. In my project, I only need two colors on rectangular, so let's change the formular a little bit different... <br />
 
 
 
