@@ -54,8 +54,8 @@ Glib file is like a menu, it lists all of uniform variables from fragment and ve
 - **Rectangular and gradient color **
 
 In OpenGl`glBegin(GL_QUADS)`, `glDrawArrays()`, `glDrawElements()` are several method to create rectangular. In glman, We have another  method `QuadXY` or` QuadXZ` in glib file to create a rectangular object.<br />
-Here, I use `QuadXY` to create a XY plane, passing through (Z = 0.2) Z=z. 
-Sise 4.0 is the dimension of XY plane from (-size,-size) to (size,size) in X and Y.    
+Here I use `QuadXY` to create a XY plane, passing through (Z = 0.2) Z=z. .<br /> 
+Sise 4.0 is the dimension of XY plane from (-size,-size) to (size,size) in X and Y. .<br />    
 nx and xy are the number of sub-quads in this plane is brken into. More inforimation in this [link](http://web.engr.oregonstate.edu/~mjb/glman/Doc/glman.pdf) 
 
 ```glib
