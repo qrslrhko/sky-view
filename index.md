@@ -12,4 +12,12 @@ There are four objects in my performacne, inculding one rectangular, and three c
 ![origional](https://cloud.githubusercontent.com/assets/16565587/24595553/60bed6ae-17ec-11e7-8ef3-5c2d26110bf5.png)
 <br />
 
+Sun and cumulus clouds clouds:<br />
+<br />
+![good_2](https://cloud.githubusercontent.com/assets/16565587/24635354/d65ea3f8-1887-11e7-80a4-052024685dc2.png)
 
+<br />
+<br />
+sun and altocumulus clouds<br />
+<br />
+![good_3](https://cloud.githubusercontent.com/assets/16565587/24635486/82368c0e-1888-11e7-94d9-10d1165ec8c4.png)
