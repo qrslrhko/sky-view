@@ -43,6 +43,9 @@ Program  Sun_sky					\
 //Color 1 .3 0
 QuadXY .2 4. 100 100 
 ```
+glib file is like a menu, it lists all of uniform variables in fragment and vertex shader. Each uniform variable will show on user interface. We don't need to go back to compile the code again and again for adjusting variables, just adjust variables through user interface.     
+
+
 
 
 
