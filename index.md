@@ -2,7 +2,8 @@
 
 There are two different scenes: cumulus clouds and altocumulus clouds sky. 
 
-The basic ideas in this performacne is like this, a shining sun, and few coulds. It is smiple and elegent! In order to make sun vivic, I divided sun into three layers: white layer( it is the most brightest part), yellow layer(compass the brightest part) and solor halo layer:<br /> 
+The basic ideas in this performacne is like this, a shining sun, and few coulds. It is smiple and elegent!
+In order to make sun vivic, I divided sun into three layers: white layer( it is the most brightest part), yellow layer(compass the brightest part) and solor halo layer:<br /> 
 
 ![idea](https://cloud.githubusercontent.com/assets/16565587/24595498/f0c3f6e0-17eb-11e7-8441-a6809c5c4667.jpg)<br />
 <br /> 
