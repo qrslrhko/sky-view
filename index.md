@@ -21,9 +21,9 @@ LookAt 0 0 2  0 0 0  0 1 0
 Vertex   sun_sky.vert
 Fragment sun_sky.frag
 Program  Sun_sky					\
-	uShininess <2. 3.15 800.>		\
-    uLightX <-20. -.78 20.>                   \
-    uLightY <-20. -.2559 20.>          \
+	uShininess <2.0 3.15 800.0>		\
+    uLightX <-20.0 -.78 20.>                   \
+    uLightY <-20.0 -.2559 20.>          \
     uLightZ <-20. 2.93 20.>          \
    	uKa <0. 0.49 1.0>			\
 	uKd <0. 0.611 1.0>			\
