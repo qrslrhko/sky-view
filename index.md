@@ -4,8 +4,8 @@ There are two different scenes: sunny and cloudy sky.
 Apply three types of lighting such as ambient specular diffuse in sun and make noises for clouds.  
 
 
-There are four objects in my performacne, inculding one rectangular, and three circle. 
-The basic ideas in this performacne is like this: 
+There are four objects in my performacne, inculding one rectangular, and three circle. <br /> 
+The basic ideas in this performacne is like this:<br /> 
 ![idea](https://cloud.githubusercontent.com/assets/16565587/24592942/a7fd5302-17d2-11e7-96b5-2ea9586766a5.jpg)
 
 
