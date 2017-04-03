@@ -11,7 +11,8 @@ There are four objects in my performacne, inculding one rectangular, and three c
 <br /> 
 ![origional](https://cloud.githubusercontent.com/assets/16565587/24595553/60bed6ae-17ec-11e7-8ef3-5c2d26110bf5.png)
 <br />
-
+<br />
+<br />
 Sun and cumulus clouds:<br />
 Not too bright, and not too dark. It is a silent scene.<br />
 The Sun has a light yellow solor halo. <br />
