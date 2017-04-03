@@ -53,7 +53,7 @@ Glib file is like a menu, it lists all of uniform variables from fragment and ve
 
 - **Rectangular and gradient color **
 
-Unlike we create a recuangular through `glBegin(GL_QUADS)`, `glDrawArrays()`, `glDrawElements()`, We can use this in glib file to create a rectangular object.
+In OpenGl`glBegin(GL_QUADS)`, `glDrawArrays()`, `glDrawElements()` are several method to create rectangular. In glman, We have another  method `QuadXY` in glib file to define a rectangular object.
 
 ```glib
 QuadXY .2 4. 100 100 
