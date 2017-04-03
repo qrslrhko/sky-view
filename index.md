@@ -46,17 +46,20 @@ Program  Sun_sky					\
 QuadXY .2 4. 100 100 
 ```
 
-Glib file is like a menu, it lists all of uniform variables from fragment and vertex shader. Each uniform variable will show on user interface. We don't need to go back to compile the code again and again for adjusting variables, just adjust variables through user interface.  
+Glib file is like a menu, it lists all of uniform variables from fragment and vertex shader. Each uniform variable will be showed on user interface. We don't need to go back to compile the code again and again for adjusting variables, just adjust variables through user interface. It is so convenient!  
 
 <img width="544" alt="screen shot 2017-04-02 at 7 29 13 pm" src="https://cloud.githubusercontent.com/assets/16565587/24593692/b77726a2-17da-11e7-8ee1-2b880926db0b.png">
 
 
 - **Rectangular and gradient color **
 
-In OpenGl`glBegin(GL_QUADS)`, `glDrawArrays()`, `glDrawElements()` are several method to create rectangular. In glman, We have another  method `QuadXY` in glib file to define a rectangular object.
+In OpenGl`glBegin(GL_QUADS)`, `glDrawArrays()`, `glDrawElements()` are several method to create rectangular. In glman, We have another  method `QuadXY` or` QuadXZ` in glib file to create a rectangular object.<br />
+Here, I use `QuadXY` to create a XY plane, passing through (Z = 0.2) Z=z. 
+Sise 4.0 is the dimension of XY plane from (-size,-size) to (size,size) in X and Y.    
+nx and xy are the number of sub-quads in this plane is brken into. More inforimation in this [link](http://web.engr.oregonstate.edu/~mjb/glman/Doc/glman.pdf) 
 
 ```glib
-QuadXY .2 4. 100 100 
+QuadXY 0.2 4.0 100 100    \\ QuadXY z size nx ny
 ```
 
 
