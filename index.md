@@ -3,7 +3,7 @@
 There are two different scenes: sunny and cloudy sky. 
 
 The basic ideas in this performacne is like this:<br /> 
-![1](https://cloud.githubusercontent.com/assets/16565587/24595412/30a8e8d4-17eb-11e7-8fb5-51b5fdad45c8.jpg)
+![idea](https://cloud.githubusercontent.com/assets/16565587/24595467/b2130440-17eb-11e7-8438-7e02708710b8.jpg)
 There are four objects in my performacne, inculding one rectangular, and three circle. <br /> 
 ![origional](https://cloud.githubusercontent.com/assets/16565587/24593365/9cb0d37a-17d7-11e7-9626-e0796c442eb6.png)
 
