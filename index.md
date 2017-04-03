@@ -97,16 +97,24 @@ In fragment shader:<br />
 According to [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) in wiki,
 <img width="994" alt="screen shot 2017-04-03 at 2 07 46 am" src="https://cloud.githubusercontent.com/assets/16565587/24602637/8a26463c-1812-11e7-8126-96f9ca0fe5ce.png">. It shows a gradient color on a square with four colors. In my project, I only need two colors on rectangular, so let's change the formular a little bit different... <br />
 
+```          (1-x,y)             xy
+                (0,1)           (1,1)
+ 		o---------------o
+		.               .
+		.       .       .
+		.      (x,y)    .
+		.               .
+		o---------------o
+	       (0,0)            (1,0)
+	    (1-x, 1-y)         (1-y)x  
+	    	    
+	    
 ```
-[1-x, x] [ color_1][ 1-y ]
-           color_2    y
 
-= [1-x*color_1  x*color_2 ][ 1-y ]
-			      y
-			      
-= [(1-x)*color_1*(1-y)   x*color_2*y ]			      
+An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation)
+<img width="250" alt="screen shot 2017-04-03 at 2 51 18 am" src="https://cloud.githubusercontent.com/assets/16565587/24604140/7d7d6c34-1818-11e7-878d-5382fae2645a.png">. the point (1,0) and (0,1) have the same navy_blue color; (0,0) and (1,1) have the same light_blue color.  
 
-```
+
 
 - **circle**
 
