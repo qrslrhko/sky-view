@@ -63,7 +63,7 @@ QuadXY .2 4. 100 100
 
 
 
-```c
+```glsl
   vec3 color;
  
     vec3  navy_blue = vec3( 0.137255, 0.137255, 0.556863 );
