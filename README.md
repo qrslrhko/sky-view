@@ -136,10 +136,8 @@ color_2 : pont(0,1)~(x,y)  and point(x,y)~(1,0)
 
 ```
 We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.According to [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation):  <br />
-<br />
 ** a  = color_1 * precentage + color_2 * (1 - precentage)** <br />
  <br />
-
 In OpenGl, the mix function can help us do linear interpoliation. <br />
 **mix( genType x , genType y , genType a)** <br />
 => x and y are the ranges that we want to interpolate. Here x is `vec4(light_blue,1)` and y is `vec4(navy_blue,1)`     <br />
