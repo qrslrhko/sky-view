@@ -135,8 +135,8 @@ We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.The
  <br />
 Use mix function(mix — linearly interpolate between two values) in OpenGl to do linear interpoliation <br />
 **mix(x,y,a)** <br />
-=> x and y is the range that we want to interpolate. Here x is `vec4(light_blue,1)` and y is `vec4(navy_blue,1)`     <br />
-=> a is used to interpolate x and y. Here a is `x+y-2xy` or `1-x-y+2xy`.Because I named `uv = new_vST`, `uv` represnets xy  <br />
+=> x and y are the ranges that we want to interpolate. Here x is `vec4(light_blue,1)` and y is `vec4(navy_blue,1)`     <br />
+=> value a is used to interpolate x and y. Here a is `x+y-2xy` or `1-x-y+2xy`.Because I named `uv = new_vST`, `uv` represnets xy  <br />
 
 ```glsl 
 vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + uv.y  - 1* uv.y * uv.y)  );
