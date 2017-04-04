@@ -117,18 +117,18 @@ According to [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_int
 	    
 ```
 
-An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation).The point (1,0) and (0,1) have the same red color; (0,0).<br />
-<br />
-<img width="250" alt="screen shot 2017-04-03 at 2 51 18 am" src="https://cloud.githubusercontent.com/assets/16565587/24604140/7d7d6c34-1818-11e7-878d-5382fae2645a.png"> <br />
-<br />
-Assume that I want two colors to create gradient color on a square plane. 
+An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation). The left picture is the original picture in wiki. I change a little bit different to become the right side picture. The green point P in xy image which is we want to interpolate. So the presentage of p in xy image is:
 
-```glsl  
-   (1-x)(y)*Color_1 + (1-y)x*Color_1   and  (1-x)(1-y)*Color_2 + xy*Color_2
- =  y-xy+x-xy*Color_1  and  1-y-x+xy+xy*Color_2
- =  (x+y-2xy)Color_1   and  (1-x-y+2xy)*Color_2 
- 
-```  
+
+<br />
+<br />
+![explain](https://cloud.githubusercontent.com/assets/16565587/24639632/dbcfb0b6-18a5-11e7-89f8-e51fa9ac8144.jpg)
+
+<br />
+<br />
+
+
+
 We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.There is a formula of linear interpolation:  <br />
 <br />
 **R = color_1 * precentage + color_2 * (1 - precentage)** <br />
@@ -141,13 +141,7 @@ Use mix function(mix — linearly interpolate between two values) in OpenGl to d
 ```glsl 
 vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + uv.y  - 1* uv.y * uv.y)  );
  
-```
-<br />
 
-![explain](https://cloud.githubusercontent.com/assets/16565587/24639632/dbcfb0b6-18a5-11e7-89f8-e51fa9ac8144.jpg)
-
-
-<br />
 
 
 
