@@ -15,7 +15,7 @@ There are four objects in my performacne, inculding one rectangular, and three c
 <br />
 <br />
 <br />
-Sun and cumulus clouds:<br />
+- Sun and cumulus clouds:<br />
 Not too bright, and not too dark. It is a silent scene.<br />
 The Sun has a light yellow solor halo. <br />
 <br />
@@ -24,7 +24,7 @@ The Sun has a light yellow solor halo. <br />
 <br />
 <br />
 <br />
-sun and altocumulus clouds<br />
+- sun and altocumulus clouds<br />
 A sunset scene.<br />
 <br />
 <br />
