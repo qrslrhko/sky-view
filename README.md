@@ -102,6 +102,13 @@ According to [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_int
 <img width="994" alt="screen shot 2017-04-03 at 2 07 46 am" src="https://cloud.githubusercontent.com/assets/16565587/24602637/8a26463c-1812-11e7-8126-96f9ca0fe5ce.png">. It shows a gradient color on a square with four colors. In my project, I only need two colors on rectangular, so let's change the formular a little bit different... <br />
 
 
+An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation).In the upper picture, the green Point P which is we want to interpolate. The lower picture is an example of bilinear interpolation on the unit square. The erea of z = 1 has the same read color.<br /> 
+<br />
+<br />
+<img width="247" alt="screen shot 2017-04-03 at 8 08 58 pm" src="https://cloud.githubusercontent.com/assets/16565587/24640137/6aeba7d4-18a9-11e7-99ce-05ce3b6eb08c.png">
+
+<br />
+<br />
 ```glsl
              (1-x)(y)             xy
                 (0,1)           (1,1)
@@ -117,16 +124,6 @@ According to [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_int
 	    
 ```
 
-An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation). The left picture is the original picture in wiki. I change a little bit different to become the right side picture. The green point P in xy image which is we want to interpolate. So the presentage of p in xy image is:
-
-
-<br />
-<br />
-![explain](https://cloud.githubusercontent.com/assets/16565587/24639632/dbcfb0b6-18a5-11e7-89f8-e51fa9ac8144.jpg)
-
-<br />
-<br />
-
 
 
 We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.There is a formula of linear interpolation:  <br />
@@ -141,7 +138,6 @@ Use mix function(mix — linearly interpolate between two values) in OpenGl to d
 ```glsl 
 vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + uv.y  - 1* uv.y * uv.y)  );
  
-
 
 
 
