@@ -154,8 +154,8 @@ vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + u
 ```
 In my program, I didn't use `x+y-2xy` or `1-x-y+2xy` becuase I don't want the same precentage of two colors. Thus, I use `x+y-1xy` or `1-x-y+1xy`.Here is my background:<br />
 
-![updown](https://cloud.githubusercontent.com/assets/16565587/24640863/8ee56d36-18af-11e7-98c3-7131b61e2295.png)
- 
+![iwant](https://cloud.githubusercontent.com/assets/16565587/24640969/43a6a122-18b0-11e7-86a1-ea51b763c2f2.png)
+
 
 
 
