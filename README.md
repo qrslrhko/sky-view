@@ -98,16 +98,18 @@ In fragment shader:<br />
 
 
 ```
-Take the advantage of [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) in wiki.
+Take the advantage of [bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) in wiki. In the upper figure, the green Point P which is we want to interpolate. The lower figure is an example of bilinear interpolation on the unit square. The erea of z = 1 has the same red color.<br /> 
 <br />
 <br />
 <img width="247" alt="screen shot 2017-04-03 at 8 08 58 pm" src="https://cloud.githubusercontent.com/assets/16565587/24640137/6aeba7d4-18a9-11e7-99ce-05ce3b6eb08c.png">
 
 <br />
 <br />
-In the upper picture, the green Point P which is we want to interpolate. The lower picture is an example of bilinear interpolation on the unit square. The erea of z = 1 has the same red color.<br /> 
+<br />
+<br />
 
-
+If we want to do linear interpolation with two colors, we can divided a unit square into two section of colors.<br />
+(0,1)~(x,y) and (x,y) ~(1,0) have the same color. It is like the previous figure, the eare of z =1 has the same red color.<br />  
 
 ```glsl
              (1-x)(y)             xy
