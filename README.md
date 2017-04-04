@@ -144,7 +144,7 @@ vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + u
 ```
 <br />
 
-![var1](https://cloud.githubusercontent.com/assets/16565587/24637583/23eac2b4-1897-11e7-9131-5b497e693ed0.png)
+![explain](https://cloud.githubusercontent.com/assets/16565587/24639632/dbcfb0b6-18a5-11e7-89f8-e51fa9ac8144.jpg)
 
 
 <br />
