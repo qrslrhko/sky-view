@@ -105,8 +105,6 @@ Take the advantage of [bilinear interpolation](https://en.wikipedia.org/wiki/Bil
 
 <br />
 <br />
-<br />
-<br />
 
 If we want to do linear interpolation with two colors, we can divided a unit square into two section of colors.<br />
 (0,1)~(x,y) and (x,y) ~(1,0) have the same color. It is like the previous figure, the eare of z =1 has the same red color.<br />  
@@ -144,17 +142,22 @@ We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.Acc
 <br />
 ** a  = color_1 * precentage + color_2 * (1 - precentage)** <br />
  <br />
- <br />
-The mix function(mix — linearly interpolate between two values) in OpenGl can do linear interpoliation <br />
-**mix(x,y,a)** <br />
+
+In OpenGl, the mix function can help us do linear interpoliation. <br />
+<br />
+**mix( genType x , genType y , genType a)** <br />
 => x and y are the ranges that we want to interpolate. Here x is `vec4(light_blue,1)` and y is `vec4(navy_blue,1)`     <br />
 => value a is used to interpolate x and y. Here a is `x+y-2xy` or `1-x-y+2xy`.Because I named `uv = new_vST`, `uv` represnets xy  <br />
+
+
+
+
 
 ```glsl 
 vec4  gradient_sky = vec4 (mix(vec4(light_blue,1) , vec4(navy_blue,1),  uv.y + uv.y  - 1* uv.y * uv.y)  );
  
 
-
+```
 
 - **circle**
 
