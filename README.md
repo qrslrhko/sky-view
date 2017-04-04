@@ -126,10 +126,14 @@ An example on [Wiki](https://en.wikipedia.org/wiki/Bilinear_interpolation).The p
    (1-x)(y)*Color_1 + (1-y)x*Color_1   and  (1-x)(1-y)*Color_2 + xy*Color_2
  =  y-xy+x-xy*Color_1  and  1-y-x+xy+xy*Color_2
  =  (x+y-2xy)Color_1   and  (1-x-y+2xy)*Color_2 
- =  (x+y-2xy)Color_1   and  (-1+x+y-2xy)*Color_2
  
 ```  
-We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular. Here, I prefer `x+y-2xy` as the precentage of two colors.        
+We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.There is a formula of linear interpolation:
+
+**R = firstCol.R * p + secondCol.R * (1 - p)**
+
+
+
 
 - **circle**
 
