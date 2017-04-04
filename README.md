@@ -103,7 +103,6 @@ Take the advantage of [bilinear interpolation](https://en.wikipedia.org/wiki/Bil
 <img width="247" alt="screen shot 2017-04-03 at 8 08 58 pm" src="https://cloud.githubusercontent.com/assets/16565587/24640137/6aeba7d4-18a9-11e7-99ce-05ce3b6eb08c.png">
 
 <br />
-<br />
 
 If we want to do linear interpolation with two colors, we can divided a unit square into two section of colors.<br />
 (0,1)~(x,y) and (x,y) ~(1,0) have the same color. It is like the previous figure, the eare of z =1 has the same red color.<br />  
@@ -124,7 +123,7 @@ If we want to do linear interpolation with two colors, we can divided a unit squ
 ```
 Take a part of idea in wiki, we use this formula to get the precentage of point (x,y) in unit square. The idea is also from [stackoverflow](http://stackoverflow.com/questions/5359258/opengl-how-to-render-perfect-rectangular-gradient) <br /> 
 <br />
-<img width="994" alt="screen shot 2017-04-03 at 2 07 46 am" src="https://cloud.githubusercontent.com/assets/16565587/24602637/8a26463c-1812-11e7-8126-96f9ca0fe5ce.png">. 
+<img width="994" alt="screen shot 2017-04-03 at 2 07 46 am" src="https://cloud.githubusercontent.com/assets/16565587/24602637/8a26463c-1812-11e7-8126-96f9ca0fe5ce.png"> 
 <br />
 <br />
 ```glsl
@@ -136,19 +135,18 @@ color_2 : pont(0,1)~(x,y)  and point(x,y)~(1,0)
 => color_1*-1+x+y-2xy  + color_2*(x+y-2xy)
 
 ```
-
 We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.According to [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation):  <br />
 <br />
 ** a  = color_1 * precentage + color_2 * (1 - precentage)** <br />
  <br />
 
 In OpenGl, the mix function can help us do linear interpoliation. <br />
-<br />
 **mix( genType x , genType y , genType a)** <br />
 => x and y are the ranges that we want to interpolate. Here x is `vec4(light_blue,1)` and y is `vec4(navy_blue,1)`     <br />
 => value a is used to interpolate x and y. Here a is `x+y-2xy` or `1-x-y+2xy`.Because I named `uv = new_vST`, `uv` represnets xy  <br />
 
  <br />
+ 
  The left picture is used by `x+y-2xy`, and the right picture is used by `1-x-y+2xy`. They perform the same figure.  <br />
 ![compare](https://cloud.githubusercontent.com/assets/16565587/24640813/ffbf070c-18ae-11e7-96fc-14f8a7844fd7.jpg) <br />
 
