@@ -112,7 +112,7 @@ If we want to do linear interpolation with two colors, we can divided a unit squ
 (0,1)~(x,y) and (x,y) ~(1,0) have the same color. It is like the previous figure, the eare of z =1 has the same red color.<br />  
 
 ```glsl
-             (1-x)(y)             xy
+                          
                 (0,1)           (1,1)
  		o---------------o
 		.               .
@@ -121,20 +121,31 @@ If we want to do linear interpolation with two colors, we can divided a unit squ
 		.               .
 		o---------------o
 	       (0,0)            (1,0)
-	    (1-x)(1-y)         (1-y)x  
+	  
 	    	    
 	    
 ```
-
+Take a part of idea in wiki, we use this formula to get the precentage of point (x,y) in unit square. The idea is also from [stackoverflow](http://stackoverflow.com/questions/5359258/opengl-how-to-render-perfect-rectangular-gradient) <br /> 
 <br />
 <img width="994" alt="screen shot 2017-04-03 at 2 07 46 am" src="https://cloud.githubusercontent.com/assets/16565587/24602637/8a26463c-1812-11e7-8126-96f9ca0fe5ce.png">. 
 <br />
-
-We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.There is a formula of linear interpolation:  <br />
 <br />
-**R = color_1 * precentage + color_2 * (1 - precentage)** <br />
+```glsl
+
+color_1 : point(0,0)~(x,y) and point(x,y)~(1,1)
+color_2 : pont(0,1)~(x,y)  and point(x,y)~(1,0)
+
+=> color_1*(1-x)(1-y)_xy  + color_2*(1-x)y+(1-x)y
+=> color_1*-1+x+y-2xy  + color_2*(x+y-2xy)
+
+```
+
+We can take x+y-2xy or -1+x+y-2xy as precentage of two colors in rectangular.According to [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation):  <br />
+<br />
+** a  = color_1 * precentage + color_2 * (1 - precentage)** <br />
  <br />
-Use mix function(mix — linearly interpolate between two values) in OpenGl to do linear interpoliation <br />
+ <br />
+The mix function(mix — linearly interpolate between two values) in OpenGl can do linear interpoliation <br />
 **mix(x,y,a)** <br />
 => x and y are the ranges that we want to interpolate. Here x is `vec4(light_blue,1)` and y is `vec4(navy_blue,1)`     <br />
 => value a is used to interpolate x and y. Here a is `x+y-2xy` or `1-x-y+2xy`.Because I named `uv = new_vST`, `uv` represnets xy  <br />
