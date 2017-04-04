@@ -144,9 +144,6 @@ In OpenGl, the mix function can help us do linear interpoliation. <br />
 **mix( genType x , genType y , genType a)** <br />
 => x and y are the ranges that we want to interpolate. Here x is `vec4(light_blue,1)` and y is `vec4(navy_blue,1)`     <br />
 => value a is used to interpolate x and y. Here a is `x+y-2xy` or `1-x-y+2xy`.Because I named `uv = new_vST`, `uv` represnets xy  <br />
-
- <br />
- 
  The left picture is used by `x+y-2xy`, and the right picture is used by `1-x-y+2xy`. They perform the same figure.  <br />
 ![compare](https://cloud.githubusercontent.com/assets/16565587/24640813/ffbf070c-18ae-11e7-96fc-14f8a7844fd7.jpg) <br />
 
